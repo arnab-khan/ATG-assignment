@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 1vw;
+}
+.c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* start home  */
+.first_div{
+    padding: 1% 5%;
+}
+.first_div_mobile{
+    display: none;
+}
+.home_mobile_portion{
+    color: white; 
+    padding: 3rem 2%; 
+    width: 100%; 
+    position: absolute; 
+    align-items: center; 
+    justify-content: space-between;
+    display: none; 
+}
+/* end homr  */
+
+/* start last portion  */
+.last_portion{
+    width: 90%;
+    margin-left: 5%;
+}
+
+/* start left portion  */
+.left_portion{
+    width: 70%;
+    height: 100vh;
+}
+
+/* start nav bar  */
+.nav_ul{
+    width: 102.3%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #8A8A8A;
+    margin-left: -2.3%;
+    margin-top: 4%;
+}
+.mobile_nav_ul{
+    display: none;
+}
+.under_line{
+    width: 100%;
+    height: .1rem;
+    background-color: #E0E0E0;
+}
+.sub_under_line{
+    width: 9.4%;
+    height: 100%;
+    background-color: black;
+}
+/* end nav bar  */
+
+/* end left portion  */
+
+/* start right portion  */
+.right_portion{
+    position: absolute;
+    top: 37.5rem; 
+    right: 5%;
+    width: 20%;
+}
+
+/* end last portion  */
+
+/* start create account  */
+.create_account{
+    background-color: white;
+    position: fixed;
+    top: 10vh;
+    left: 10%;
+    width: 80%;
+    padding: 3%;
+    display: none;
+    max-height: 85vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.form_instraction{
+    background-color: #EFFFF4;
+    padding: 2%;
+    color: #008A45;
+    width: 108%;
+    margin-left: -4%;
+}
+.create_account_left{
+    width: 50%;
+    font-size: 1.5rem;
+    margin-top: 4%;
+}
+.mobile_create_account{
+    display: none;
+}
+.last_instraction_mobile{
+    display: none;
+}
+.create_account_right{
+    position: absolute;
+    right: 0;
+    top: 8rem;
+}
+.form_close{
+    position: fixed;
+    top: 6vh;
+    left: 89%;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px 8px;
+    font-size: 10px;
+    font-weight: 900;
+    display: none;
+}
+.black_background{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    display: none;
+}
+/* end create account  */
+
+/* start mobile responsive  */
+@media only screen and (max-width: 600px) {
+    html{
+        font-size: 2vw;
+    }
+    .first_div{
+        display: none;
+        height: 0rem;
+    }
+    .first_div_mobile{
+        position: absolute;
+        top: 0;
+        background-color: white;
+        width: 100%;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 80%;
+    }
+    .home_mobile_portion{
+        display: flex; 
+    }
+    .last_portion{
+        width: 100%;
+        margin-left: 0;
+    }
+    .nav_ul{
+        display: none;
+    }
+    .under_line{
+        display: none;
+    }
+    .mobile_nav_ul{
+        display: flex;
+        width: 100%;
+        height: 5rem;
+        justify-content: space-between;
+        align-items: center;
+        padding: 7% 2%;
+    }
+
+    .right_portion{
+        display: none;
+    }
+    .left_portion{
+        width: 100%;
+    }
+
+    /* start create account  */
+    .create_account{
+        width: 100%;
+        left: 0;
+        border-radius: 1rem;
+    }
+    .form_close{
+        padding: .5% 1.5%;
+        font-size: 1rem;
+        background-color: black;
+        color: white;
+        top: calc(10vh + 7.5rem);
+        left: 91.5%;
+        z-index: 1;
+        font-size: 1.5rem;
+    }
+    .create_account_right{
+        display: none;
+    }
+    .create_account_left{
+        width: 100%;
+    }
+    .mobile_create_account{
+        display: flex;
+        width: 100%;
+        padding-left: 53%;
+        text-decoration: underline;
+    }
+    .last_instraction_mobile{
+        display: block;
+        width: 60%;
+        margin-left: 20%;
+        text-align: center;
+        margin-top: 5%;
+    }
+    /* end create account  */
+
+}
+
+/* end mobile responsive  */
